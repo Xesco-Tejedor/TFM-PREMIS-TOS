@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<premis:premis xmlns:premis="http://www.loc.gov/premis/v3"
+               xmlns:tos="https://uc3m.es/tfm/tos/1.0"
+               version="3.0">
+
+  <!-- ==========================================================
+       OBJETO: La Abadía del Crimen (Opera Soft, 1987)
+       Plataforma original: ZX Spectrum 48K/128K
+       ========================================================== -->
+  <premis:object xsi:type="premis:representation"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>UUID</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>abadia-crimen-1987-zx-0001</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:significantProperties>
+      <premis:significantPropertiesType>title</premis:significantPropertiesType>
+      <premis:significantPropertiesValue>La Abadía del Crimen</premis:significantPropertiesValue>
+    </premis:significantProperties>
+    <premis:objectCharacteristics>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>0000000000000000000000000000000000000000000000000000000000000000</premis:messageDigest>
+        <premis:messageDigestOriginator>tos:ChronodeckValidator/1.0</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>TZX</premis:formatName>
+          <premis:formatVersion>1.20</premis:formatVersion>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+  </premis:object>
+
+  <!-- ==========================================================
+       EXTENSIÓN TOS: eventos de la cadena de custodia forense
+       ========================================================== -->
+  <tos:events>
+    <tos:hardwareAcquisition>
+      <tos:hardware>
+        <tos:chip>Z80A</tos:chip>
+        <tos:clockHz>3500000</tos:clockHz>
+        <tos:hardwareFixity>
+          <messageDigest>PENDIENTE-HASH-PLACA</messageDigest>
+          <captureTimestamp>2025-03-16T11:45:02Z</captureTimestamp>
+        </tos:hardwareFixity>
+      </tos:hardware>
+    </tos:hardwareAcquisition>
+
+    <tos:analogCapture>
+      <tos:analogSample>
+        <tos:sampleRate>96000</tos:sampleRate>
+        <tos:bitDepth>24</tos:bitDepth>
+        <tos:analogHash>PENDIENTE-HASH-WAV</tos:analogHash>
+      </tos:analogSample>
+    </tos:analogCapture>
+
+    <tos:affTelemetrySession>
+      <tos:affSessionId>ABADIA-160325-001</tos:affSessionId>
+      <tos:z80ClockHz>3500000</tos:z80ClockHz>
+      <tos:memoryContentionProfile>ZX128K</tos:memoryContentionProfile>
+    </tos:affTelemetrySession>
+
+    <tos:premisTosPackaging>
+      <tos:depositLegalReference>DL-8BIT-2025-002</tos:depositLegalReference>
+    </tos:premisTosPackaging>
+  </tos:events>
+
+</premis:premis>
