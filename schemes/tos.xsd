@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:premis="http://www.loc.gov/premis/v3"
+            xmlns:tos="https://uc3m.es/tfm/tos/1.0"
+            targetNamespace="https://uc3m.es/tfm/tos/1.0"
+            elementFormDefault="qualified">
+
+  <!-- Extensiones básicas -->
+  <xsd:complexType name="Tos:HardwareFixityType">
+    <xsd:sequence>
+      <xsd:element name="messageDigest" type="xsd:string"/>
+      <xsd:element name="captureTimestamp" type="xsd:dateTime"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- Eventos -->
+  <xsd:element name="events">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="hardwareAcquisition" type="Tos:HardwareAcquisitionType"/>
+        <xsd:element name="physicalRestoration" type="Tos:PhysicalRestorationType"/>
+        <xsd:element name="analogCapture" type="Tos:AnalogCaptureType"/>
+        <xsd:element name="bitstreamExtraction" type="Tos:BitstreamExtractionType"/>
+        <xsd:element name="affTelemetrySession" type="Tos:AffTelemetrySessionType"/>
+        <xsd:element name="chronodeckGeneration" type="Tos:ChronodeckType"/>
+        <xsd:element name="emulationValidation" type="Tos:EmulationValidationType"/>
+        <xsd:element name="premisTosPackaging" type="Tos:PremisTosPackagingType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
