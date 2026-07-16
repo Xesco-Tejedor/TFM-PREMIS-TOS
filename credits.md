@@ -1,7 +1,7 @@
 # Créditos
 
 ## Autoría
-- **Xesco Tejedor** — Diseño del esquema PREMIS-TOS, metodología forense y redacción.
+- **Francesc Adrià Perelló** — Diseño del esquema PREMIS-TOS, metodología forense y redacción.
 
 ## Marco académico
 - **Trabajo de Fin de Máster (TFM)** — Universidad Carlos III de Madrid (UC3M), 2025.
